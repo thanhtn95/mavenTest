@@ -15,7 +15,7 @@ public class Book {
     private String author;
     private String test;
     private double price;
-    @ManyToOne(targetEntity = Categories.class, fetch = FetchType.LAZY)
+    @ManyToOne(targetEntity = Categories.class, fetch = FetchType.EAGER)
     @JoinColumn(name = "category_id")
     private Categories category;
     public Book() {

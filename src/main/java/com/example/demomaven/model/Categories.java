@@ -14,8 +14,8 @@ public class Categories {
     private long id;
     private String name;
     private String description;
-    @OneToMany(mappedBy = "category",cascade = CascadeType.ALL)
-    private List<Book> books;
+//    @OneToMany(mappedBy = "category",cascade = CascadeType.ALL)
+//    private List<Book> books;
     public Categories() {
     }
 }
